@@ -1,0 +1,71 @@
+# vcpkg dependencies directory
+vcpkg_installed/
+
+# YouCompleteMe
+.ycm_extra_conf.py
+
+# CMake directory name in README
+build/
+generated
+cmake-build-debug
+.vscode
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.os
+*.scons*
+
+# Compiled Dynamic libraries
+*.so
+lib*.so*
+*.dylib
+*.dll
+*.so.1
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Dependency file
+*.d
+
+# Mac swap file
+*.DS_Store
+
+# Linux swap file
+*.swp
+
+# IDE generated files
+.csettings
+.cproject
+.project
+.settings/
+.pydevproject
+.idea/
+.vs/
+*.cbp
+*.ninja*
+.clangd/
+compile_commands.json
+
+# CMAKE
+Makefile
+cmake_install.cmake
+CMakeFiles
+CMakeCache.txt
+
+install_manifest.txt
+merged-library
+
+# Visual Studio files
+out/
+CMakeSettings.json
