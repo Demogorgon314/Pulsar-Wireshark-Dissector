@@ -3,6 +3,7 @@ project(pulsar_wireshark)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "-O3 -g ${CMAKE_CXX_FLAGS}")
+set(CMAKE_BUILD_TYPE RELEASE)
 
 find_library(WIRESHARK_LIB wireshark)
 find_library(WIRESHARK_UTIL_LIB wsutil)
@@ -23,9 +24,6 @@ endif()
 
 find_library(Protobuf_LIBRARIES protobuf libprotobuf)
 find_path(Protobuf_INCLUDE_DIRS google/protobuf/stubs/common.h)
-#
-#message(STATUS "Protobuf_LIBRARIES: ${Protobuf_LIBRARIES}")
-#message(STATUS "Protobuf_INCLUDE_DIRS: ${Protobuf_INCLUDE_DIRS}")
 
 include_directories(${Protobuf_INCLUDE_DIRS})
 

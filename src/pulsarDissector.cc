@@ -298,7 +298,6 @@ void link_to_response_frame(proto_tree* cmd_tree, tvbuff_t* tvb, int offset, int
 static int dissect_pulsar_message(tvbuff_t *tvb, packet_info* pinfo, proto_tree* tree,
                                   void* data _U_) {
     col_set_str(pinfo->cinfo, COL_PROTOCOL, "Pulsar");
-    col_clear(pinfo->cinfo, COL_INFO);
 
     conversation_t* conversation = find_or_create_conversation(pinfo);
     ConnectionState* state = (ConnectionState*) conversation_get_proto_data(conversation,
